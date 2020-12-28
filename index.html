@@ -1,1 +1,116 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/mdi/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous">
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+  </head>
+  <body>
+    <div class="overflow-wrap">
+      <!-- HOME -->
+      <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+          <div class="carousel-wrap">
+            <div class="window">
+              <div id="carousel">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank"
+              ><div class="button">
+                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+              </div></a
+            >
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+      </div>
+
+      <section id="home" class="flex height-fix">
+        <div id="pt" class="canvas"></div>
+        <div class="flex">
+          <div class="text">
+            Hello, I'm <span class="highlight">Shashank Katte</span>.
+            <br />
+            I'm a full-stack web developer & Agile Coach.
+          </div>
+          <div class="contact-links text">
+            <a
+              href="https://www.linkedin.com/in/shashankkatte/"
+              target="_blank"
+              class="btn contact-details"
+              ><i class="fab fa-linkedin"></i></a
+            >
+            <a
+              id="profile-link"
+              href="https://github.com/shashankkatte"
+              target="_blank"
+              class="btn contact-details"
+              ><i class="fab fa-github"></i></a
+            >
+            <a
+              href="https://medium.com/@shashankkatte"
+              target="_blank"
+              class="btn contact-details"
+              ><i class="fab fa-medium"></i></a
+            >
+            <a
+              href="https://www.youtube.com/channel/UCnEDfdGiDA7MKcIVGCKI-Ug"
+              target="_blank"
+              class="btn contact-details"
+              ><i class="fab fa-youtube"></i></a
+            >
+            <a href="mailto:shashank@katte.io" class="btn contact-details"
+              ><i class="far fa-envelope"></i></a
+            >
+          </div>
+        </section>
+    </div>
+  </body>
+</html>
+
+<script src="scripts/canvas.js"></script>
